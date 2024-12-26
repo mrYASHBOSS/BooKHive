@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRL"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/shape_toolbar01">
+
+        <ImageView
+            android:id="@+id/iconIv"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/app_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iconIv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            app:fontFamily="sans-serif-condensed" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--Email -->
+
+            <EditText
+                android:id="@+id/emailET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_edittext01"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="10dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="@color/kPrimeColor"
+                android:textColorHint="@color/kPrimeColor" />
+
+            <!--Password -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordTill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailET"
+                android:layout_marginTop="5dp"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/passwordET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/emailET"
+                    android:background="@drawable/shape_edittext01"
+                    android:drawableStart="@drawable/ic_lock_open"
+                    android:drawablePadding="10dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="@color/kPrimeColor"
+                    android:textColorHint="@color/kPrimeColor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--ForgotPassword-->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/forgoTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/passwordTill"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:padding="5dp"
+                android:text="Forgot Password ??"
+                android:textColor="@color/kPrimeColor" />
+            <!--Login Button-->
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/forgoTV"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/shape_button01"
+                android:text="Login"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/kPrimeColor" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <!--No Account Register-->
+    <TextView
+        android:id="@+id/noAccountTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="@string/new_user_signup" />
+
+</RelativeLayout>

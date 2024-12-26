@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/actor</item>
+        <item>@font/alatsi</item>
+        <item>@font/albert_sans_thin</item>
+        <item>@font/allerta</item>
+        <item>@font/amiko</item>
+        <item>@font/dm_sans_medium</item>
+        <item>@font/fira_code_medium</item>
+        <item>@font/gantari_medium</item>
+        <item>@font/lexend</item>
+        <item>@font/monda</item>
+        <item>@font/montserrat_alternates</item>
+        <item>@font/poppins</item>
+        <item>@font/ropa_sans</item>
+    </array>
+</resources>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegistrationActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/toolbarRL"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/shape_toolbar01">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:src="@drawable/ic_arrow_back" />
+
+        <ImageView
+            android:id="@+id/iconIv"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/app_forgot_password" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iconIv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            app:fontFamily="sans-serif-condensed"
+            android:text="Create New Account"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--Name-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nameTill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false"
+                app:cursorColor="@color/kPrimeColor"
+                >
+
+                <EditText
+                    android:id="@+id/nameET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_edittext01"
+                    android:drawableStart="@drawable/ic_person"
+                    android:drawablePadding="10dp"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textColor="@color/kPrimeColor"
+                    android:textColorHint="@color/kPrimeColor" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--Email -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailTill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameTill"
+                android:layout_marginTop="5dp"
+                app:cursorColor="@color/kPrimeColor"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/emailET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_edittext01"
+                    android:drawableStart="@drawable/ic_email"
+                    android:drawablePadding="10dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textColor="@color/kPrimeColor"
+                    android:textColorHint="@color/kPrimeColor" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--Password -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordTill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailTill"
+                android:layout_marginTop="5dp"
+                app:hintEnabled="false"
+                app:cursorColor="@color/kPrimeColor"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/passwordET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_edittext01"
+                    android:drawableStart="@drawable/ic_lock_open"
+                    android:drawablePadding="10dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="@color/kPrimeColor"
+                    android:textColorHint="@color/kPrimeColor" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--ConfirmPassword -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/cPasswordTill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/passwordTill"
+                android:layout_marginTop="5dp"
+                app:hintEnabled="false"
+                app:cursorColor="@color/kPrimeColor"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/cPasswordET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_edittext01"
+                    android:drawableStart="@drawable/ic_lock_open"
+                    android:drawablePadding="10dp"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="@color/kPrimeColor"
+                    android:textColorHint="@color/kPrimeColor" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--Register Button-->
+            <Button
+                android:id="@+id/RegisterBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cPasswordTill"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_button01"
+                android:text="Register"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/kPrimeColor" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BookHive</string>
+    <string name="welcome_to_bookhive">Welcome to BookHive</string>
+    <string name="new_user_signup">New User? <b>SignUp</b></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="a_friendly_greeting_that_clearly_states_the_app_s_purpose_like">A friendly greeting that clearly states the app\'s purpose, like \" Welcome to your digital library ! \"</string>
+    <string name="dashboard_user">Dashboard User</string>
+    <string name="profile">Profile</string>
+    <string name="account">Account</string>
+    <string name="member">Member</string>
+    <string name="favorite_books">Favorite Books</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="submit">Submit</string>
+    <string name="update">Update</string>
+</resources>
